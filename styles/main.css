@@ -1,0 +1,225 @@
+:root {
+  --bg-color: #c0c0c0;
+  --text-color: rgba(0, 0, 0, 0.85);
+  --btn-color: #3a6ea5;
+}
+
+/*Navbar*/
+
+nav {
+  background-color: var(--bg-color);
+}
+
+.logo-mark {
+  background-color: var(--btn-color);
+  padding: 5px;
+  border-radius: 12px;
+  margin-right: 3px;
+}
+
+
+/*Hero*/
+
+.landing {
+  height: 100vh;
+  background-color: var(--bg-color);
+  /* background: linear-gradient(to right, rgb(33, 37, 41), #071428); */
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.landing h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+.btn-custom {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+#btn-learnmore {
+  border: 2px solid var(--btn-color);
+  color: var(--text-color);
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+#btn-learnmore:hover {
+  background: var(--btn-color);
+  color: var(--text-color);
+}
+
+.btn-custom:hover {
+  border: 2px solid var(--btn-color);
+  background-color: rgba(58, 110, 165, 0.8);
+  color: var(--text-color);
+}
+
+.hero-img {
+  max-width: 100%;
+  border-radius: 50%;
+  /* box-shadow: 0 0px 0px rgba(0,0,0,0.2); */
+}
+    
+@media (max-width: 768px) {
+  .landing {
+    text-align: center;
+  }
+  .landing h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* About */
+
+.about {
+  padding-top: 100px;
+  /* height: 100vh; */
+  background-color: var(--bg-color);
+  /* background: linear-gradient(to right, rgb(33, 37, 41), #071428); */
+  color:  var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.about img {
+  width: 500px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+  .landing h1 {
+    font-size: 2.5rem;
+  }
+
+  .about img {
+    width: 300px;
+  }
+}
+
+/* Skills */
+
+.skills {
+  padding-top: 100px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+  .landing h1 h3 {
+    font-size: 2.5rem;
+  }
+}
+
+ .icon-box {
+      width: 60px;
+      height: 60px;
+      background-color: var(--btn-color);
+      border: 2px solid var(--bg-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+    }
+
+    .icon-box-lan {
+      margin-right: 7px;
+      margin-bottom: 10px;
+      border: 2px solid var(--bg-color);
+      border-radius: 50%;
+      display: inline-block;
+      background-color: var(--btn-color);
+    }
+
+    .icon-box-lan:hover {
+      background-color: var(--bg-color);
+    }
+
+    .lan-icon {
+      width: 30px;
+    }
+
+    #skills figcaption {
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+    .toggle {
+      background-color: var(--btn-color);
+      border: 2px solid var(--bg-color);
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.75rem;
+      position: relative;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: white;
+      border-radius: 15px;
+    }
+    .toggle:hover {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      border: 2px solid var(--bg-color);
+    }
+    .toggle .info {
+      max-height: 0;
+      overflow: hidden;
+      background-color: var(--bg-color);
+      /* border-top: 1px solid var(--bg-color); */
+      padding: 0 1rem;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+    .toggle:hover .info {
+      max-height: 100px;
+      padding: 0.5rem 1rem;
+      color: var(--text-color);
+    }
+    .column-box {
+      border: 2px solid var(--btn-color);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      /* background-color: var(--btn-color); */
+      color: var(--text-color);
+    }
+
+    .column-box:hover {
+      background-color: var(--btn-color);
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+

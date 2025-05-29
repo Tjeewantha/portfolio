@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
     <div class="container">
-      <a href="#" class="navbar-brand"><spa class="px-1">&#46;</spa>JEEWA</a>
+      <a href="#" class="navbar-brand fs-3 fw-bold"><spa class="logo-mark">&#46;</spa>JEEWA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -21,10 +21,10 @@
             <a href="#" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Portfolio</a>
+            <a href="#skills" class="nav-link">Skills</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Projects</a>
@@ -37,17 +37,113 @@
     </div>
   </nav> 
   
-  <div class="container-fluid overflow-hidden bg-danger" id="hero_container">
-      <div class="row d-flex align-item-center">
-        <div class="col-lg-4">
-          <img src="assests/images/character.jpg" width="400">
+    <!-- Hero Section -->
+  <section class="landing">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h1>Hello, I'm</h1>
+          <h1>Thisara Jeewantha</h1>
+          <p class="lead">Enjoy developing and troubleshooting computer networks - Have intrest about cool hacking challenges </p>
+          <a href="#" class="btn btn-custom">Download CV</a>
+          <a href="#" class="btn mx-4" id="btn-learnmore">Let's Talk</a>
         </div>
-        <div class="col-lg-8">
-          <h1>I'm Thisara Jeewantha</h1>
+        <div class="col-md-6 text-center d-none d-md-block">
+          <img src="assets/images/main-character.png" alt="John Doe" class="hero-img">
         </div>
       </div>
-  </div>
+    </div>
+  </section>
 
+  <section class="about" id="about">
+    <div class="container">
+      <h1 class="display-6 fw-bold mb-4">About</h1>
+      <p class="lead">I am an aspiring IT professional with a strong passion for networking and cybersecurity. While I have a keen interest in both fields, I've recently focused on sharpening my networking skills to build a solid foundation for a future in IT infrastructure and security.</p>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="assets/images/story-image.png" alt="story-image" class="story-image" >
+        </div>
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h1 class="display-8 py-2 mt-0">The Story</h1>
+          <p class="lead lh-5">I hold an Advanced Higher National Diploma (AHND) in Cybersecurity and am currently pursuing a BSc in Cybersecurity and Networking Technology. Throughout my academic journey, I’ve completed several solo projects related to both network configuration and cyber defense, which have helped me apply my knowledge in practical, real-world scenarios.
+          Although I haven’t held a formal IT role yet, I’ve actively contributed to solving POS system issues and connectivity problems at the hotel where I work part-time as a cashier. These hands-on experiences, though informal, have given me valuable insights into troubleshooting and maintaining IT systems in real-world environments.
+          To continuously sharpen my cybersecurity skills, I regularly engage in CTF (Capture The Flag) challenges, a hobby that started during my diploma studies and has become a vital part of my learning journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container py-4">
+      <h1 class="display-6 fw-bold mb-4">Skills</h1>
+      <div class="row g-4">
+        <!-- Column 1 -->
+        <div class="col-12 col-md-4">
+          <div class="column-box">
+            <div class="icon-box"><img src="assets/Icon/networking-icon.svg" alt="icon" class="networking-icon"></div>
+              <h3>Networking</h3>
+            <div class="toggle">Networking Fundamental
+              <div class="info">Understand how networks operate (LAN, WAN, WLAN, etc.)</div>
+              <div class="info">IP addressing (IPv4/IPv6), subnetting</div>
+              <div class="info">Grasp the OSI and TCP/IP models</div>
+            </div>
+            <div class="toggle">Routing and Switching
+              <div class="info">Configure and troubleshoot routers and switches</div>
+              <div class="info">Learn protocols like OSPF and VLANs</div>
+              <div class="info">Understand inter-VLAN routing and Layer 2/3 functionalities</div>
+            </div>
+            <div class="toggle">Network Security Basics
+              <div class="info">basic security concepts (firewalls, access control lists (ACLs), secure device access)</div>
+              <div class="info">Use tools like port security and secure management protocols</div>
+            </div>
+            <div class="toggle">IP Services
+              <div class="info">DHCP (Dynamic Host Configuration Protocol)</div>
+              <div class="info">NAT (Network Address Translation)</div>
+              <div class="info">DNS (Domain Name System)</div>
+              <div class="info">Understand QoS (Quality of Service) basics</div>
+            </div>
+            <div class="toggle">Network Automation
+              <div class="info">network automation using Python and REST APIs</div>
+              <div class="info">Learn about SDN (Software-Defined Networking) concepts</div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-12 col-md-4">
+        <div class="column-box">
+          <div class="icon-box"><img src="assets/Icon/cybersecurity-icon.svg" alt="icon" class="cybersecurity-icon"></div>
+          <h3>Cybersecurity</h3>
+          <div class="toggle">
+            Toggle 1
+            <div class="info">Info for Toggle 1 in Column 2: Sed nisi. Nulla quis sem at nibh elementum imperdiet.</div>
+          </div>
+          <div class="toggle">
+            Toggle 2
+            <div class="info">Info for Toggle 2: Duis sagittis ipsum. Praesent mauris.</div>
+          </div>
+          <div class="toggle">
+            Toggle 3
+            <div class="info">Info for Toggle 3: Fusce nec tellus sed augue semper porta.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-md-4">
+        <div class="column-box text-center">
+          <div class="icon-box"><img src="assets/Icon/script-icon.svg" alt="icon" class="script-icon"></div>
+          <h3>Script Languages</h3>
+          <div class="icon-box-lan py-3 px-4"><img src="assets/Icon/html-icon.webp" alt="icon" class="lan-icon"><figcaption>HTML</figcaption></div>
+          <div class="icon-box-lan py-3 px-4"><img src="assets/Icon/css-icon.png" alt="icon" class="lan-icon"><figcaption>CSS</figcaption></div>
+          <div class="icon-box-lan py-3 px-4"><img src="assets/Icon/bash-icon.webp" alt="icon" class="lan-icon"><figcaption>Bash</figcaption></div>
+          <div class="icon-box-lan py-3 px-4"><img src="assets/Icon/python-icon.webp" alt="icon" class="lan-icon"><figcaption>Python</figcaption></div>
+          <div class="icon-box-lan py-3 px-4"><img src="assets/Icon/powershell-icon.webp" alt="icon" class="lan-icon"><figcaption>Pshell</figcaption></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   
 </body>
 </html>
