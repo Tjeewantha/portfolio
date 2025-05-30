@@ -1,0 +1,16 @@
+.education {
+  background-color: var(--bg-color);
+}
+
+.education .edu-box {
+  width: 100%;
+}
+
+.education .edu-icon {
+  width: 90px;
+  background-color: blue;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: -50px;
+}
